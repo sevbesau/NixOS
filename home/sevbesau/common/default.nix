@@ -1,17 +1,19 @@
 { inputs, lib, pkgs, config, outputs, ... }:
 {
   imports = [
-    ../features/bash.nix
-    ../features/inputrc.nix
-    ../features/vscode.nix
+    ../features/console/bash.nix
+    ../features/console/git.nix
+    ../features/console/inputrc.nix
+    ../features/console/neovim.nix
+    ../features/desktop/firefox.nix
+    ../features/desktop/urxvt.nix
+    ../features/desktop/vscode.nix
   ];
   
   nixpkgs.config = {
     allowUnfree = true;
     allowUnfreePredicate = (_: true);
   };
-  
-  programs.home-manager.enable = true;
   
   home = {
     username = "sevbesau";
@@ -21,42 +23,17 @@
     sessionVariables = {
       EDITOR = "nvim";
     };
+    packages = with pkgs; [
+      _1password-gui
+      nodejs_18
+      nodePackages.pnpm
+      htop
+    ];
   };
-  
-  home.packages = with pkgs; [
-    _1password-gui
-    nodejs_18
-    nodePackages.pnpm
-    htop
-  ];
-  
-  programs.neovim = {
-    enable = true;
-  };
-  
-  programs.firefox = {
-    enable = true;
-    profiles.default = {
-      isDefault = true;
-      # TODO
-      extensions = with pkgs.nur.repos.rycee.firefox-addons; [
-        onepassword-password-manager
-      ];
-    };
-  };
-  
-  programs.git = {
-    enable = true;
-    userName = "sevbesau";
-    userEmail = "seppe@sevbesau.xyz";
-  };
-  
-  programs.urxvt = {
-    enable = true;
-    fonts = [ "xft:monospace:size=18" ];
-    scroll.bar.enable = false;
-  };
-  
+
+  # Lets home-manager update itself
+  programs.home-manager.enable = true;
+ 
   xdg.userDirs = {
     enable = true;
     createDirectories = true;
