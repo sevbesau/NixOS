@@ -1,8 +1,7 @@
 { pkgs, ... }:
-
 {
   fonts = {
-    fonts = with pkgs; [
+    packages = with pkgs; [
       nerdfonts
       joypixels
       noto-fonts
