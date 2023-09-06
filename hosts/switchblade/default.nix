@@ -13,7 +13,7 @@
       ../common/global
       ../common/users/sevbesau
 
-      ../common/optional/gnome
+      ../common/optional/gnome.nix
     ];
 
   networking.hostName = "switchblade"; 
