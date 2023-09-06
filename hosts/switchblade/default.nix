@@ -12,8 +12,8 @@
       # Thinkpad t480 specific hardware optimizations
       # "${builtins.fetchGit { url = "https://github.com/NixOS/nixos-hardware.git"; } }/lenovo/thinkpad/t480"
 
-      ../common/docker.nix
-      ../common/fonts.nix
+      # ../common/docker.nix
+      # ../common/fonts.nix
       
     ];
 
