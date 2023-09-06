@@ -2,7 +2,9 @@
   description = "My NixOS configuration";
   
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs = {
+      url = "github:nixos/nixpkgs/nixos-unstable"; 
+    };
     
     hardware.url = "github:nixos/hardware";
     sops-nix.url = "github:mic92/sops-nix";
