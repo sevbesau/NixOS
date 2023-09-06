@@ -5,8 +5,7 @@
       ./hardware-configuration.nix
 
       inputs.hardware.nixosModules.common-cpu-intel
-      inputs.hardware.nixosModules.common-gpu-nvidia
-      inputs.hardware.nixosModules.common-gpu-nvidia-prime
+      # inputs.hardware.nixosModules.common-gpu-nvidia TODO
       inputs.hardware.nixosModules.common-gpu-intel
       inputs.hardware.nixosModules.common-pc-ssd
       inputs.hardware.nixosModules.lenovo-thinkpad-t480
