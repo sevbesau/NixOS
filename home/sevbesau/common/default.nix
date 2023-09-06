@@ -39,9 +39,9 @@
     profiles.default = {
       isDefault = true;
       # TODO
-      # extensions = with pkgs.nur.repos.rycee.firefox-addons; [
-      #   onepassword-password-manager
-      # ];
+      extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+        onepassword-password-manager
+      ];
     };
   };
   
