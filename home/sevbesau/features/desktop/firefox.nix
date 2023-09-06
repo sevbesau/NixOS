@@ -4,10 +4,11 @@
     enable = true;
     profiles.default = {
       isDefault = true;
-      extensions = with inputs.firefox-addons; [
-        ublock-origin
-        onepassword-password-manager
-      ];
+      # TODO not working
+      # extensions = with inputs.firefox-addons; [
+      #   ublock-origin
+      #   onepassword-password-manager
+      # ];
     };
   };
 
