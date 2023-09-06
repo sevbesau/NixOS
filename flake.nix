@@ -8,7 +8,7 @@
   outputs = { self, nikpkgs }: 
   {
     nixosConfigurations = {
-      sevbesau = nikpkgs.lib.nixosSystem {
+      switchblade = nikpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           ./hosts/switchblade
