@@ -5,5 +5,8 @@
     extraOptions = ''
       experimental-features = nix-command flakes
     '';
+    settings.allowed-users = [
+      "@wheel"
+    ];
   };
 }

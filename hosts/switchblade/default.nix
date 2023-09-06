@@ -92,17 +92,6 @@
     packages = with pkgs; [];
   };
 
-  nix = {
-    package = pkgs.nixFlakes;
-    extraOptions = ''
-      experimental-features = nix-command flakes
-    '';
-    settings.allowed-users = [
-      "@wheel"
-    ];
-  }
-
-
   # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.enable = true;
   services.xserver.displayManager.autoLogin.user = "sevbesau";
