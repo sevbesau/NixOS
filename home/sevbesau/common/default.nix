@@ -19,7 +19,7 @@
     stateVersion = "23.05";
     sessionPath = [ "$HOME/.local/bin" ];
     sessionVariables = {
-      EDITOR = "nvim"
+      EDITOR = "nvim";
     };
   };
   
