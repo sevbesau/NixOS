@@ -27,6 +27,7 @@
     _1password-gui
     nodejs_18
     nodePackages.pnpm
+    htop
   ];
   
   programs.neovim = {
