@@ -6,7 +6,7 @@
       url = "github:nixos/nixpkgs/nixos-unstable"; 
     };
     
-    hardware.url = "github:nixos/hardware";
+    hardware.url = "github:nixos/nixos-hardware";
     sops-nix.url = "github:mic92/sops-nix";
     
     home-manager = {
