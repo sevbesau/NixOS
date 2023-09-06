@@ -7,7 +7,5 @@
       setSocketVariable = true;
     };
   };
-
-  users.extraGroups.docker.members = [ "root" "sevbesau" ];
 }
 
