@@ -10,10 +10,11 @@
       ./hardware-configuration.nix
 
       # Thinkpad t480 specific hardware optimizations
-      "${builtins.fetchGit { url = "https://github.com/NixOS/nixos-hardware.git"; } }/lenovo/thinkpad/t480"
+      # "${builtins.fetchGit { url = "https://github.com/NixOS/nixos-hardware.git"; } }/lenovo/thinkpad/t480"
 
       ../common/docker.nix
       ../common/fonts.nix
+      
     ];
 
   # Bootloader.
@@ -119,7 +120,7 @@
     vim
   ];
 
-    # Some programs need SUID wrappers, can be configured further or are
+  # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
   # programs.gnupg.agent = {
