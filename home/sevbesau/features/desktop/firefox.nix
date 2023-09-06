@@ -1,10 +1,10 @@
-{ pkgs, ... }:
+{ inputs, ... }:
 {
   programs.firefox = {
     enable = true;
     profiles.default = {
       isDefault = true;
-      extensions = with pkgs.inputs.firefox-addons; [
+      extensions = with inputs.firefox-addons; [
         ublock-origin
         onepassword-password-manager
       ];
