@@ -12,7 +12,7 @@
       automatic = true;
       dates = "weekly";
       # keep last 3 generations
-      options = "delete-older-than +3"
+      options = "delete-older-than +3";
     };
   };
 }
