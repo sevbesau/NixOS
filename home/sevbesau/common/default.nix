@@ -43,7 +43,7 @@
       #   onepassword-password-manager
       # ];
     };
-  }
+  };
   
   programs.git = {
     enable = true;
