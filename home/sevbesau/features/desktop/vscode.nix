@@ -16,6 +16,7 @@
       "editor.minimap.enabled" = false;
       "editor.formatOnSave" = true;
       "editor.defaultFormatter" = "esbenp.prettier-vscode";
+      "workbench.colorTheme" = "Default Light Modern";
     };
   };
 }
