@@ -14,6 +14,8 @@
       ../common/users/sevbesau
 
       ../common/optional/gnome.nix
+      ../common/optional/graphical-boot.nix
+      ../common/optional/quietboot.nix
     ];
 
   networking.hostName = "switchblade"; 
@@ -28,21 +30,6 @@
   # Enable swap on luks
   boot.initrd.luks.devices."luks-f9e32b81-563d-4a42-8db6-90e2951869f5".device = "/dev/disk/by-uuid/f9e32b81-563d-4a42-8db6-90e2951869f5";
   boot.initrd.luks.devices."luks-f9e32b81-563d-4a42-8db6-90e2951869f5".keyFile = "/crypto_keyfile.bin";
-
-  # graphical boot
-  boot.plymouth = {
-    enable = true;
-    themePackages = with pkgs; [
-      adi1090x-plymouth-themes
-    ];
-    # theme = "";
-    logo = {
-      pkgs.fetchurl {
-        url = "https://nixos.org/logo/nixos-hires.png";
-        sha256 = "1ivzgd7iz0i06y36p8m5w48fd8pjqwxhdaavc0pxs7w1g7mcy5si";
-      }
-    };
-  };
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
