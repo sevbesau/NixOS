@@ -29,6 +29,10 @@
   boot.initrd.luks.devices."luks-f9e32b81-563d-4a42-8db6-90e2951869f5".device = "/dev/disk/by-uuid/f9e32b81-563d-4a42-8db6-90e2951869f5";
   boot.initrd.luks.devices."luks-f9e32b81-563d-4a42-8db6-90e2951869f5".keyFile = "/crypto_keyfile.bin";
 
+  # graphical boot
+  boot.plymouth = {
+    enable = true;
+  };
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
