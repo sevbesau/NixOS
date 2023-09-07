@@ -8,6 +8,7 @@
     ../features/desktop/firefox.nix
     ../features/desktop/urxvt.nix
     ../features/desktop/vscode.nix
+    ../features/desktop/dconf.nix
   ];
   
   nixpkgs.config = {
