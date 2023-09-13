@@ -46,12 +46,24 @@
         modules = [ ./hosts/switchblade ];
         specialArgs = { inherit inputs outputs; };
       };
+      # Desktop
+      guillotine = lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [ ./hosts/guillotine ];
+        specialArgs = { inherit inputs outputs; };
+      };
     };
     
     homeConfigurations = {
       # Laptop
       "sevbesau@switchblade" = lib.homeManagerConfiguration {
         modules = [ ./home/sevbesau/switchblade.nix ];
+        pkgs = pkgsFor.x86_64-linux; # for ARM use "aarch64-linux"
+        extraSpecialArgs = { inherit inputs outputs; };
+      };
+      # Desktop
+      "sevbesau@guillotine" = lib.homeManagerConfiguration {
+        modules = [ ./home/sevbesau/guillotine.nix ];
         pkgs = pkgsFor.x86_64-linux; # for ARM use "aarch64-linux"
         extraSpecialArgs = { inherit inputs outputs; };
       };
