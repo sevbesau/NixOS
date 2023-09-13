@@ -4,11 +4,11 @@
     [ # Include the results of the hardware scan.
       # ./hardware-configuration.nix
 
-      inputs.hardware.nixosModules.common-cpu-intel
+      #inputs.hardware.nixosModules.common-cpu-intel
       # inputs.hardware.nixosModules.common-gpu-nvidia TODO
-      inputs.hardware.nixosModules.common-gpu-intel
-      inputs.hardware.nixosModules.common-pc-ssd
-      inputs.hardware.nixosModules.lenovo-thinkpad-t480
+      #inputs.hardware.nixosModules.common-gpu-intel
+      #inputs.hardware.nixosModules.common-pc-ssd
+      #inputs.hardware.nixosModules.lenovo-thinkpad-t480
 
       ../common/global
       ../common/users/sevbesau
@@ -21,6 +21,7 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
