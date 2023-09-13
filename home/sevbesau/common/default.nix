@@ -1,10 +1,13 @@
 { inputs, lib, pkgs, config, outputs, ... }:
 {
   imports = [
+    ../features/scripts/git-prompt.nix
+
     ../features/console/bash.nix
     ../features/console/git.nix
     ../features/console/inputrc.nix
     ../features/console/neovim.nix
+
     ../features/desktop/firefox.nix
     ../features/desktop/urxvt.nix
     ../features/desktop/vscode.nix

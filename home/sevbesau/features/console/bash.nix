@@ -46,7 +46,6 @@
       	git status > /dev/null 2>&1 && echo -e "\e[31m$O\e[41m\e[30m$( __git_ps1 | sed 's/[()]//g' )\e[0m\e[31m$C\e[0m"
       }
       
-      
       # setting the prompt
       HOST="$FG_GREEN$O$BG_GREEN$TEXT_COLOR\h$R$FG_GREEN$C$R"
       CWD="$FG_CYAN$O$BG_CYAN$TEXT_COLOR\w$R$FG_CYAN$C$R"

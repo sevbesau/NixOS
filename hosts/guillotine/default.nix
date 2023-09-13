@@ -14,6 +14,8 @@
       ../common/users/sevbesau
 
       ../common/optional/gnome.nix
+      ../common/optional/graphical-boot.nix
+      ../common/optional/quietboot.nix
     ];
 
   networking.hostName = "switchblade"; 
@@ -21,7 +23,6 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
