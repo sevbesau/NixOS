@@ -2,7 +2,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      # ./hardware-configuration.nix
+      ./hardware-configuration.nix
 
       #inputs.hardware.nixosModules.common-cpu-intel
       # inputs.hardware.nixosModules.common-gpu-nvidia TODO
