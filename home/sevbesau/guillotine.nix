@@ -2,9 +2,7 @@
 {
   imports = [
     ./common
+    ./common/desktop/steam.nix
   ];
   
-  home.packages = with pkgs; [
-    steam
-  ];
 }
