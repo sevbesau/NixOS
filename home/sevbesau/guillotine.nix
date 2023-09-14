@@ -2,7 +2,7 @@
 {
   imports = [
     ./common
-    ./common/desktop/steam.nix
+    ./features/desktop/steam.nix
   ];
   
 }
