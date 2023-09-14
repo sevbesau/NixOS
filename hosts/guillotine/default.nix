@@ -18,7 +18,7 @@
       ../common/optional/quietboot.nix
     ];
 
-  networking.hostName = "switchblade"; 
+  networking.hostName = "guillotine"; 
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
