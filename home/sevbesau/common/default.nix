@@ -12,6 +12,7 @@
     ../features/desktop/urxvt.nix
     ../features/desktop/vscode.nix
     ../features/desktop/dconf.nix
+    ../features/desktop/slack.nix
   ];
   
   nixpkgs.config = {
