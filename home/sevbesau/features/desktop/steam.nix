@@ -1,0 +1,3 @@
+{
+  home.packages = [ pkgs.steam ];
+}
