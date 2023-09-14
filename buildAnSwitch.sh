@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 
-nixos-rebuild --use-remote-sudo --flake .#switchblade switch
+host="$1"
+shift
+
+[ -z "$host" ] && echo "No host specified" && exit 2
+
+nixos-rebuild --flake .#$host switch --use-remote-sudo 
