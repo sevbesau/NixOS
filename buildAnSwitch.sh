@@ -3,6 +3,6 @@
 host="$1"
 shift
 
-[ -z "$host" ] && echo "No host specified" && exit 2
+[ -z "$host" ] && host="$(hostname)"
 
 nixos-rebuild --flake .#$host switch --use-remote-sudo 
