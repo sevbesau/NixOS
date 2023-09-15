@@ -34,7 +34,8 @@
       "editor.defaultFormatter" = "esbenp.prettier-vscode";
       "workbench.colorTheme" = "Monokai";
       "extensions.autoCheckUpdates" = false;
-      "autoUpdate" = false;
+      "extensions.autoUpdate" = false;
+      "git.autofetch" = true;
     };
   };
 }
