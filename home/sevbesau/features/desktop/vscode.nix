@@ -3,11 +3,27 @@
 {
   programs.vscode = {
     enable = true;
-    extensions = [
-      pkgs.vscode-extensions.esbenp.prettier-vscode
-      pkgs.vscode-extensions.asvetliakov.vscode-neovim
-      pkgs.vscode-extensions.bbenoist.nix
-      pkgs.vscode-extensions.bradlc.vscode-tailwindcss
+    mutableExtensionsDir = false;
+    extensions = with pkgs.vscode-extensions; [
+      esbenp.prettier-vscode
+      asvetliakov.vscode-neovim
+      bbenoist.nix
+      bradlc.vscode-tailwindcss
+      eamodio.gitlens
+    ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+      {
+        name = "volar";
+        publisher = "vue";
+        version = "1.8.11";
+        sha256 = "637be102ba685c2187b3f038efbd7a5c191bb462afea4a1ea59b66fee918ee4f";
+      }
+      {
+        name = "vscode-typescript-vue-plugin";
+        publisher = "vue";
+        version = "1.8.11";
+        sha256 = "b9bbd20f3b67d1c60d33287e0a6ee5e3c37ac27d59b7a2d6a67c3cebd89d83ba";
+      }
+
     ];
     userSettings = {
       "keyboard.dispatch" = "keyCode";
@@ -17,6 +33,8 @@
       "editor.formatOnSave" = true;
       "editor.defaultFormatter" = "esbenp.prettier-vscode";
       "workbench.colorTheme" = "Monokai";
+      "extensions.autoCheckUpdates" = false;
+      "autoUpdate" = false;
     };
   };
 }
