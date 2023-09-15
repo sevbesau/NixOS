@@ -36,6 +36,7 @@
       "extensions.autoCheckUpdates" = false;
       "extensions.autoUpdate" = false;
       "git.autofetch" = true;
+      "git.confirmSync" = false;
     };
   };
 }
