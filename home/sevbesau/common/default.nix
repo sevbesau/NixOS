@@ -8,11 +8,13 @@
     ../features/console/inputrc.nix
     ../features/console/neovim.nix
 
+    ../features/desktop/dconf.nix
     ../features/desktop/firefox.nix
+    ../features/desktop/slack.nix
+    # ../features/desktop/steam.nix
+    ../features/desktop/transmission.nix
     ../features/desktop/urxvt.nix
     ../features/desktop/vscode.nix
-    ../features/desktop/dconf.nix
-    ../features/desktop/slack.nix
   ];
   
   nixpkgs.config = {
