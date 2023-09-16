@@ -9,6 +9,7 @@
     ../features/console/neovim.nix
 
     ../features/desktop/dconf.nix
+    ../features/desktop/discord.nix
     ../features/desktop/firefox.nix
     ../features/desktop/slack.nix
     # ../features/desktop/steam.nix
