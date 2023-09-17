@@ -8,6 +8,7 @@
     ../features/console/inputrc.nix
     ../features/console/neovim.nix
 
+    ../features/desktop/bluemail.nix
     ../features/desktop/dconf.nix
     ../features/desktop/discord.nix
     ../features/desktop/firefox.nix
