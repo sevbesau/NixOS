@@ -11,6 +11,7 @@ in
     ../features/console/inputrc.nix
     ../features/console/neovim.nix
 
+    ../features/desktop/1password.nix
     ../features/desktop/bluemail.nix
     ../features/desktop/dconf.nix
     ../features/desktop/discord.nix
