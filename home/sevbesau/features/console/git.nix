@@ -5,6 +5,7 @@
     userEmail = "seppe@sevbesau.xyz";
     extraConfig = {
       init.defaultBranch = "main";
+      pull.rebase = false;
     };
   };
 }
