@@ -2,6 +2,7 @@
 { inputs, outputs, ... }: {
   imports = [
     inputs.home-manager.nixosModules.home-manager
+    ./1password.nix
     ./docker.nix
     ./fonts.nix
     ./locale.nix

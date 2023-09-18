@@ -11,7 +11,6 @@ in
     ../features/console/inputrc.nix
     ../features/console/neovim.nix
 
-    ../features/desktop/1password.nix
     ../features/desktop/bluemail.nix
     ../features/desktop/dconf.nix
     ../features/desktop/discord.nix
@@ -41,7 +40,6 @@ in
       EDITOR = "nvim";
     };
     packages = with pkgs; [
-      _1password-gui
       nodejs_18
       nodePackages.pnpm
       htop
