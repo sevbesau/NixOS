@@ -1,5 +1,8 @@
 { inputs, lib, pkgs, config, outputs, ... }:
-{
+let
+  inherit (inputs.nix-colors) colorSchemes;
+in
+{ 
   imports = [
     ../features/scripts/git-prompt.nix
 
@@ -16,7 +19,11 @@
     ../features/desktop/transmission.nix
     ../features/desktop/urxvt.nix
     ../features/desktop/vscode.nix
+
+    inputs.nix-colors.homeManagerModules.default
   ];
+  
+  colorScheme = lib.mkDefault colorSchemes.monokai;
   
   nixpkgs.config = {
     allowUnfree = true;
