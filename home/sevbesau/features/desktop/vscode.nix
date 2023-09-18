@@ -1,5 +1,4 @@
 { config, pkgs, ... }:
-
 {
   programs.vscode = {
     enable = true;
@@ -23,11 +22,11 @@
         version = "1.8.11";
         sha256 = "b9bbd20f3b67d1c60d33287e0a6ee5e3c37ac27d59b7a2d6a67c3cebd89d83ba";
       }
-
     ];
     userSettings = {
       "keyboard.dispatch" = "keyCode";
       "window.zoomLevel" = 2;
+      "window.menuBarVisibility" = "hidden";
       "editor.tabSize" = 2;
       "editor.minimap.enabled" = false;
       "editor.formatOnSave" = true;
