@@ -11,12 +11,10 @@ in
     ../features/console/inputrc.nix
     ../features/console/neovim.nix
 
-    ../features/desktop/bluemail.nix
     ../features/desktop/dconf.nix
     ../features/desktop/discord.nix
     ../features/desktop/firefox.nix
     ../features/desktop/slack.nix
-    # ../features/desktop/steam.nix
     ../features/desktop/transmission.nix
     ../features/desktop/urxvt.nix
     ../features/desktop/vscode.nix
@@ -60,5 +58,23 @@ in
     music = "${config.home.homeDirectory}/music";
     pictures = "${config.home.homeDirectory}/pictures";
     videos = "${config.home.homeDirectory}/videos";
+  };
+  
+  accounts.email.accounts = {
+    "Siliconminds" = {
+      address = "seppe@siliconminds.be";
+      primary = true;
+      realName = "Seppe Van Besauw";
+      # signature = {
+      # };
+      imap = {
+        host = "imap.gmail.com";
+        port = 993;
+        # tls = {
+        #   useStarTls = true;
+        # }
+      };
+
+    };
   };
 }
