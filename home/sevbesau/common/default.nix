@@ -15,8 +15,8 @@ in
     ../features/desktop/discord.nix
     ../features/desktop/firefox.nix
     ../features/desktop/slack.nix
+    ../features/desktop/terminal.nix
     ../features/desktop/transmission.nix
-    ../features/desktop/urxvt.nix
     ../features/desktop/vscode.nix
 
     inputs.nix-colors.homeManagerModules.default

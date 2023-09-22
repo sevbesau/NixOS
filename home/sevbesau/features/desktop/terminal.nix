@@ -3,16 +3,24 @@ let
   inherit (config.colorScheme) colors;
 in
 {
+  programs.kitty = {
+    enable = true;
+    font = {
+      name = "monospace";
+      size = "18";
+    };
+  };
+
   programs.urxvt = {
     enable = true;
     fonts = [ "xft:monospace:size=18, xft:JoyPixels:size=18, Noto Color Emoji:size=18" ];
     scroll.bar.enable = false;
     extraConfig = {
-      "perl-ext-common" = "zoom";
+      "perl-ext-common" = "urxvt-resize-font";
       "perl-lib" = "${config.home.profileDirectory}/lib/urxvt/perl";
-      "keysym.C-equal" =  "perl:zoom:in"
-      "keysym.C-minus" =  "perl:zoom:out"
-      "keysym.C-plus" =  "perl:zoom:eq"
+      # "keysym.C-equal" =  "perl:zoom:in";
+      # "keysym.C-minus" =  "perl:zoom:out";
+      # "keysym.C-plus" =  "perl:zoom:eq";
 
       "*.foreground" = "#${colors.base07}";
       "*.cursorColor" = "#${colors.base07}";
