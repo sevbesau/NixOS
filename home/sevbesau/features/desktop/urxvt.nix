@@ -8,8 +8,11 @@ in
     fonts = [ "xft:monospace:size=18, xft:JoyPixels:size=18, Noto Color Emoji:size=18" ];
     scroll.bar.enable = false;
     extraConfig = {
-      "perl-ext-common" = "<list of extensions>";
+      "perl-ext-common" = "zoom";
       "perl-lib" = "${config.home.profileDirectory}/lib/urxvt/perl";
+      "keysym.C-equal" =  "perl:zoom:in"
+      "keysym.C-minus" =  "perl:zoom:out"
+      "keysym.C-plus" =  "perl:zoom:eq"
 
       "*.foreground" = "#${colors.base07}";
       "*.cursorColor" = "#${colors.base07}";
@@ -30,11 +33,6 @@ in
       "*.color13" = "#${colors.base0D}";
       "*.color14" = "#${colors.base0E}";
       "*.color15" = "#${colors.base0F}";
-      
-      "URxvt.perl-ext" =  "zoom"
-      "URxvt.keysym.C-equal" =  "perl:zoom:in"
-      "URxvt.keysym.C-minus" =  "perl:zoom:out"
-      "URxvt.keysym.C-plus" =  "perl:zoom:eq"
     };
   };
 }
