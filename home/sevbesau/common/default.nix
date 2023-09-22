@@ -60,11 +60,24 @@ in
     videos = "${config.home.homeDirectory}/videos";
   };
   
+  programs.thunderbird = {
+    enable = true;
+    profiles = {
+      "Siliconminds" = {
+        isDefault = true;
+      };
+    };
+  };
+  
   accounts.email.accounts = {
     "Siliconminds" = {
       address = "seppe@siliconminds.be";
       primary = true;
       realName = "Seppe Van Besauw";
+      thunderbird = {
+        enable = true;        
+        profiles = [ "Siliconminds" ];
+      };
       # signature = {
       # };
       imap = {
