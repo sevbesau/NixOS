@@ -8,6 +8,9 @@ in
     fonts = [ "xft:monospace:size=18, xft:JoyPixels:size=18, Noto Color Emoji:size=18" ];
     scroll.bar.enable = false;
     extraConfig = {
+      "perl-ext-common" = "<list of extensions>";
+      "perl-lib" = "${config.home.profileDirectory}/lib/urxvt/perl";
+
       "*.foreground" = "#${colors.base07}";
       "*.cursorColor" = "#${colors.base07}";
       "*.background" = "#${colors.base00}";
