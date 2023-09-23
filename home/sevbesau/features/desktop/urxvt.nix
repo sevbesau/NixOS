@@ -27,11 +27,6 @@ in
       "*.color13" = "#${colors.base0D}";
       "*.color14" = "#${colors.base0E}";
       "*.color15" = "#${colors.base0F}";
-      
-      "URxvt.perl-ext" =  "zoom"
-      "URxvt.keysym.C-equal" =  "perl:zoom:in"
-      "URxvt.keysym.C-minus" =  "perl:zoom:out"
-      "URxvt.keysym.C-plus" =  "perl:zoom:eq"
     };
   };
 }
