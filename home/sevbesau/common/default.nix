@@ -41,6 +41,9 @@ in
       nodejs_18
       nodePackages.pnpm
       htop
+      yarn
+      nest-cli
+      wl-clipboard
     ];
   };
 
@@ -58,36 +61,5 @@ in
     music = "${config.home.homeDirectory}/music";
     pictures = "${config.home.homeDirectory}/pictures";
     videos = "${config.home.homeDirectory}/videos";
-  };
-  
-  programs.thunderbird = {
-    enable = true;
-    profiles = {
-      "Siliconminds" = {
-        isDefault = true;
-      };
-    };
-  };
-  
-  accounts.email.accounts = {
-    "Siliconminds" = {
-      address = "seppe@siliconminds.be";
-      primary = true;
-      realName = "Seppe Van Besauw";
-      thunderbird = {
-        enable = true;        
-        profiles = [ "Siliconminds" ];
-      };
-      # signature = {
-      # };
-      imap = {
-        host = "imap.gmail.com";
-        port = 993;
-        # tls = {
-        #   useStarTls = true;
-        # }
-      };
-
-    };
   };
 }
