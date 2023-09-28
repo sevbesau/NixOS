@@ -10,6 +10,7 @@ in
     ../features/console/git.nix
     ../features/console/inputrc.nix
     ../features/console/neovim.nix
+    ../features/console/ssh.nix
 
     ../features/desktop/dconf.nix
     ../features/desktop/discord.nix
@@ -44,6 +45,7 @@ in
       yarn
       nest-cli
       wl-clipboard
+      mongodb-compass
     ];
   };
 
