@@ -42,7 +42,7 @@ in
       nodejs_18
       nodePackages.pnpm
       htop
-      yarn
+      yarn-berry
       nest-cli
       wl-clipboard
       mongodb-compass
