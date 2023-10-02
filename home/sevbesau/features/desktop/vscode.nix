@@ -14,6 +14,7 @@
       bradlc.vscode-tailwindcss
       eamodio.gitlens
       tomoki1207.pdf
+      ms-azuretools.vscode-docker
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
         name = "volar";
@@ -41,6 +42,7 @@
       }
     ];
     userSettings = {
+      "update.mode" = "none";
       "keyboard.dispatch" = "keyCode";
       "window.zoomLevel" = 2;
       "window.menuBarVisibility" = "hidden";
