@@ -8,13 +8,16 @@
     enable = true;
     mutableExtensionsDir = false;
     extensions = with pkgs.vscode-extensions; [
-      esbenp.prettier-vscode
       asvetliakov.vscode-neovim
       bbenoist.nix
       bradlc.vscode-tailwindcss
       eamodio.gitlens
+      github.vscode-pull-request-github
+      github.vscode-github-actions
       tomoki1207.pdf
       ms-azuretools.vscode-docker
+      dbaeumer.vscode-eslint
+      esbenp.prettier-vscode
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
         name = "volar";
@@ -42,6 +45,7 @@
       }
     ];
     userSettings = {
+      "terminal.external.linuxExec" = "urxvt";
       "update.mode" = "none";
       "keyboard.dispatch" = "keyCode";
       "window.zoomLevel" = 2;
@@ -55,6 +59,10 @@
       "extensions.autoUpdate" = false;
       "git.autofetch" = true;
       "git.confirmSync" = false;
+      "files.autoSave" = "onFocusChange";
+      "editor.codeActionsOnSave" = {
+        "source.fixAll.eslint" = true;
+      };
     };
   };
 }
