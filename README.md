@@ -18,6 +18,12 @@ First remove the older generations with:
 sudo nix-env -p /nix/var/nix/profiles/system --delete-generations +2
 ```
 
+And then 
+
+```
+sudo gn nix-collect-garbage -d
+```
+
 Then issue a new build, this will clean up boot and add the new build
 Use the script from this repo (recommended)
 
