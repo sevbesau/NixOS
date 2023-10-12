@@ -3,10 +3,15 @@ let
   inherit (config.colorScheme) colors;
 in
 {
+  
+  imports = [
+    ../scripts/font-size.nix
+  ];
+  
   programs.urxvt = {
     enable = true;
     fonts = [ "xft:monospace:size=18, xft:JoyPixels:size=18, Noto Color Emoji:size=18" ];
-    scroll.bar.enable = false;
+    scroll.bar.enable = true;
     extraConfig = {
       "*.foreground" = "#${colors.base07}";
       "*.cursorColor" = "#${colors.base07}";
@@ -27,6 +32,9 @@ in
       "*.color13" = "#${colors.base0D}";
       "*.color14" = "#${colors.base0E}";
       "*.color15" = "#${colors.base0F}";
+      "*.perl-ext-common" = "font-size";
+      "*.keysym.C-equal" = "perl:font-size:increase";
+      "*.keysym.C-minus" = "perl:font-size:decrease";
     };
   };
 }
