@@ -21,7 +21,6 @@ in
     inputs.nix-colors.homeManagerModules.default
   ];
   
-  # colorScheme = lib.mkDefault colorSchemes.monokai;
   colorScheme = {
     slug = "monokai";
     name = "Monokai";
