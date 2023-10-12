@@ -3,7 +3,6 @@ let
   inherit (config.colorScheme) colors;
 in
 {
-  
   imports = [
     ../scripts/font-size.nix
   ];

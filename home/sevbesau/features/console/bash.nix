@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ../scripts/git-prompt.nix
+  ];
+
   programs.bash = {
     enable = true;
     historyControl = [ "erasedups" "ignorespace" ];

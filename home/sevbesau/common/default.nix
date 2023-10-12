@@ -4,8 +4,6 @@ let
 in
 { 
   imports = [
-    ../features/scripts/git-prompt.nix
-
     ../features/console/bash.nix
     ../features/console/git.nix
     ../features/console/inputrc.nix
