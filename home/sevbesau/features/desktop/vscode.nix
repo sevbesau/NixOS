@@ -63,6 +63,8 @@
       "editor.codeActionsOnSave" = {
         "source.fixAll.eslint" = true;
       };
+      "npm.enableRunFromFolder" = true;
+      "debug.javascript.autoAttachFilter" = "always";
     };
   };
 }
