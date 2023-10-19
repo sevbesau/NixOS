@@ -3,18 +3,14 @@ let
   inherit (config.colorScheme) colors;
 in
 {
-  programs.kitty = {
-    enable = true;
-    font = {
-      name = "monospace";
-      size = "18";
-    };
-  };
-
+  imports = [
+    ../scripts/font-size.nix
+  ];
+  
   programs.urxvt = {
     enable = true;
     fonts = [ "xft:monospace:size=18, xft:JoyPixels:size=18, Noto Color Emoji:size=18" ];
-    scroll.bar.enable = false;
+    scroll.bar.enable = true;
     extraConfig = {
       "perl-ext-common" = "urxvt-resize-font";
       "perl-lib" = "${config.home.profileDirectory}/lib/urxvt/perl";
@@ -41,6 +37,9 @@ in
       "*.color13" = "#${colors.base0D}";
       "*.color14" = "#${colors.base0E}";
       "*.color15" = "#${colors.base0F}";
+      "*.perl-ext-common" = "font-size";
+      "*.keysym.C-equal" = "perl:font-size:increase";
+      "*.keysym.C-minus" = "perl:font-size:decrease";
     };
   };
 }

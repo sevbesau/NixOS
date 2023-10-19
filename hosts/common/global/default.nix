@@ -20,4 +20,6 @@
   environment.enableAllTerminfo = true;
 
   hardware.enableRedistributableFirmware = true;
+  
+  boot.supportedFilesystems = [ "ntfs" ];
 }

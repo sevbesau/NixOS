@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ../scripts/git-prompt.nix
+  ];
+
   programs.bash = {
     enable = true;
     historyControl = [ "erasedups" "ignorespace" ];
@@ -14,12 +18,12 @@
       C=""
       
       RESET="\e[0m"
-      GREEN_ON_BLACK="\e[0m\e[1;33;40m"
-      BLACK_ON_GREEN="\e[0m\e[5;30;43m"
-      BLUE_ON_BLACK="\e[0m\e[1;35;40m"
-      BLACK_ON_BLUE="\e[0m\e[5;30;45m"
-      RED_ON_BLACK="\e[0m\e[1;30;40m"
-      BLACK_ON_RED="\e[0m\e[5;30;40m"
+      GREEN_ON_BLACK="\e[0m\e[0;32;40m"
+      BLACK_ON_GREEN="\e[0m\e[0;30;42m"
+      BLUE_ON_BLACK="\e[0m\e[0;34;40m"
+      BLACK_ON_BLUE="\e[0m\e[0;30;44m"
+      RED_ON_BLACK="\e[0m\e[0;31;40m"
+      BLACK_ON_RED="\e[0m\e[0;30;41m"
 
       source "$HOME/.local/bin/scripts/git-prompt"
       
