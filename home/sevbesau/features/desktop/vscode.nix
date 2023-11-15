@@ -18,6 +18,8 @@
       ms-azuretools.vscode-docker
       dbaeumer.vscode-eslint
       esbenp.prettier-vscode
+      humao.rest-client
+      ms-vsliveshare.vsliveshare
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
         name = "volar";

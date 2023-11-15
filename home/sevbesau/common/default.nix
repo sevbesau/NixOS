@@ -66,6 +66,10 @@ in
       nest-cli
       wl-clipboard
       mongodb-compass
+      shattered-pixel-dungeon
+      mpv
+      fragments
+      heroku
     ];
   };
 
