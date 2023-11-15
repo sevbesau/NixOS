@@ -45,6 +45,12 @@
         version = "0.4.0";
         sha256 = "f9cf5f760c9c444d7e70f0aefba94c711705bb13f154dc6e0864bc8421005169";
       }
+      {
+        name = "pretty-ts-errors";
+        publisher = "yoavbls";
+        version = "0.5.2";
+        sha256 = "83a2488977e340a404b5d5d982c42c96e2ae2593b432c0f58a3cbe40b604d6e6";
+      }
     ];
     userSettings = {
       "terminal.external.linuxExec" = "urxvt";
