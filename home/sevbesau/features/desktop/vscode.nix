@@ -51,6 +51,18 @@
         version = "0.5.2";
         sha256 = "83a2488977e340a404b5d5d982c42c96e2ae2593b432c0f58a3cbe40b604d6e6";
       }
+      {
+        name = "vscode-stripe";
+        publisher = "Stripe";
+        version = "2.0.14";
+        sha256 = "918264ccf6f9f395a1916bd767dbb211032f7b5e447e344c8fb347b502596f3b";
+      }
+      {
+        name = "vscode-dotnet-runtime";
+        publisher = "ms-dotnettools";
+        version = "2.0.0";
+        sha256 = "a13795b2483dc9fa219415b81a18108f74ecc1e52867a5aec669edb22b29c4ea";
+      }
     ];
     userSettings = {
       "terminal.external.linuxExec" = "urxvt";
@@ -73,6 +85,8 @@
       };
       "npm.enableRunFromFolder" = true;
       "debug.javascript.autoAttachFilter" = "always";
+      "telemetry.telemetryLevel" = "off";
+      "stripe.cliInstallPath" = "/home/sevbesau/.nix-profile/bin/stripe";
     };
   };
 }
