@@ -12,12 +12,6 @@ in
     fonts = [ "xft:monospace:size=18, xft:JoyPixels:size=18, Noto Color Emoji:size=18" ];
     scroll.bar.enable = true;
     extraConfig = {
-      "perl-ext-common" = "urxvt-resize-font";
-      "perl-lib" = "${config.home.profileDirectory}/lib/urxvt/perl";
-      # "keysym.C-equal" =  "perl:zoom:in";
-      # "keysym.C-minus" =  "perl:zoom:out";
-      # "keysym.C-plus" =  "perl:zoom:eq";
-
       "*.foreground" = "#${colors.base07}";
       "*.cursorColor" = "#${colors.base07}";
       "*.background" = "#${colors.base00}";
@@ -37,9 +31,14 @@ in
       "*.color13" = "#${colors.base0D}";
       "*.color14" = "#${colors.base0E}";
       "*.color15" = "#${colors.base0F}";
-      "*.perl-ext-common" = "font-size";
+
+      "*.perl-ext-common" = "font-size,default,matcher";
       "*.keysym.C-equal" = "perl:font-size:increase";
       "*.keysym.C-minus" = "perl:font-size:decrease";
+
+      "*.url-launcher" = "firefox";
+      "*.matcher.button" = "C-1";
+      "*.matcher.pattern.1" = "\\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]";
     };
   };
 }
