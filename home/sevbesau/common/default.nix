@@ -70,6 +70,9 @@ in
       mpv
       fragments
       heroku
+      stripe-cli
+      ngrok
+      unzip
     ];
   };
 
