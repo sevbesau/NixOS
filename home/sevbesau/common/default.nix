@@ -57,6 +57,8 @@ in
     sessionPath = [ "$HOME/.local/bin" ];
     sessionVariables = {
       EDITOR = "nvim";
+      NIX_SHELL_PRESERVE_PROMPT=1;
+      NIXPKGS_ALLOW_UNFREE=1;
     };
     packages = with pkgs; [
       nodejs_18
@@ -73,6 +75,9 @@ in
       stripe-cli
       ngrok
       unzip
+      prismlauncher
+      openjdk16-bootstrap
+      cura
     ];
   };
 
