@@ -4,6 +4,8 @@ let
 in
 { 
   imports = [
+    ./pkgs
+    
     ../features/console/bash.nix
     ../features/console/git.nix
     ../features/console/inputrc.nix
@@ -74,12 +76,25 @@ in
       heroku
       stripe-cli
       ngrok
+      cloudflared
       unzip
       prismlauncher
       openjdk16-bootstrap
       cura
+      chromium
+      kicad
+      mypackages.monokai-gtk
     ];
   };
+  
+  environment.etc."xdg/gtk-2.0/gtkrc".text = ''
+    gtk-theme-name = "monokai-gtk"
+  '';
+  
+  environment.etc."gtk/gtk-3.0/settings.ini".text = ''
+    [Settings]
+    gtk-theme-name = monokai-gtk
+  '';
 
   # Lets home-manager update itself
   programs.home-manager.enable = true;
