@@ -12,6 +12,7 @@ in
     ../features/console/neovim.nix
     ../features/console/ssh.nix
 
+    ../features/desktop/vm.nix
     ../features/desktop/dconf.nix
     ../features/desktop/discord.nix
     ../features/desktop/firefox.nix
