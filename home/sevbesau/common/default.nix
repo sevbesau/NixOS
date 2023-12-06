@@ -4,7 +4,7 @@ let
 in
 { 
   imports = [
-    ./pkgs
+    # ./pkgs
     
     ../features/console/bash.nix
     ../features/console/git.nix
@@ -12,7 +12,6 @@ in
     ../features/console/neovim.nix
     ../features/console/ssh.nix
 
-    ../features/desktop/vm.nix
     ../features/desktop/dconf.nix
     ../features/desktop/discord.nix
     ../features/desktop/firefox.nix
@@ -84,7 +83,7 @@ in
       cura
       chromium
       kicad
-      mypackages.monokai-gtk
+      # mypackages.monokai-gtk
     ];
   };
   
