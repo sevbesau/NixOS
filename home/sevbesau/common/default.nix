@@ -87,14 +87,14 @@ in
     ];
   };
   
-  environment.etc."xdg/gtk-2.0/gtkrc".text = ''
-    gtk-theme-name = "monokai-gtk"
-  '';
+  # environment.etc."xdg/gtk-2.0/gtkrc".text = ''
+  #   gtk-theme-name = "monokai-gtk"
+  # '';
   
-  environment.etc."gtk/gtk-3.0/settings.ini".text = ''
-    [Settings]
-    gtk-theme-name = monokai-gtk
-  '';
+  # environment.etc."gtk/gtk-3.0/settings.ini".text = ''
+  #   [Settings]
+  #   gtk-theme-name = monokai-gtk
+  # '';
 
   # Lets home-manager update itself
   programs.home-manager.enable = true;

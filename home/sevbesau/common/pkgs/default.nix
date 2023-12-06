@@ -3,7 +3,7 @@
 in {
   nixpkgs.overlays = [(final: prev: {
     mypackages = {
-      gtk-theme = callPackage ./gtk-theme.nix {};
+      monokai-gtk = callPackage ./monokai-gtk.nix {};
     };
   })];
 }
