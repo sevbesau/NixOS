@@ -13,6 +13,7 @@
     ./printing.nix
     # ./sops.nix
     ./systemd-initrd.nix
+    ./vm.nix
   ];
 
   home-manager.extraSpecialArgs = { inherit inputs outputs; };

@@ -61,6 +61,24 @@
       #   sha256 = "3ff86f3e35cede9af66ecbd95463a651c95c49e811ed36cfc0d16ed8379f6cb5";
       # }
 
+      {
+        name = "vscode-stripe";
+        publisher = "Stripe";
+        version = "2.0.14";
+        sha256 = "918264ccf6f9f395a1916bd767dbb211032f7b5e447e344c8fb347b502596f3b";
+      }
+      {
+        name = "vscode-dotnet-runtime";
+        publisher = "ms-dotnettools";
+        version = "2.0.0";
+        sha256 = "a13795b2483dc9fa219415b81a18108f74ecc1e52867a5aec669edb22b29c4ea";
+      }
+      {
+        name = "markdown-pdf";
+        publisher = "yzane";
+        version = "1.5.0";
+        sha256 = "6a289f6601d70b819411b90a01b2dcd29fe3519c69d6317f27563f288caf2c81";
+      }
     ];
     userSettings = {
       "terminal.external.linuxExec" = "urxvt";
@@ -84,6 +102,12 @@
       "npm.enableRunFromFolder" = true;
       "debug.javascript.autoAttachFilter" = "always";
       "obsidianmd.vaultPath" = "~/repos/notes";
+      "telemetry.telemetryLevel" = "off";
+      "stripe.cliInstallPath" = "/home/sevbesau/.nix-profile/bin/stripe";
+
+      "markdown-pdf.executablePath" = "/home/sevbesau/.nix-profile/bin/chromium";
+      "markdown-pdf.displayHeaderFooter" = true;
+      "markdown-pdf.headerTemplate" = "<div></div>";
     };
   };
 }
