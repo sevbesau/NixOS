@@ -1,13 +1,13 @@
-{ lib, stdenv, fetchurl, gtk-engine-murrine }:
+{ lib, stdenv, fetchzip, gtk-engine-murrine }:
 
 stdenv.mkDerivation rec {
   pname = "monokai-gtk";
   version = "0.0.1";
 
   srcs = [
-    (fetchurl {
+    (fetchzip {
       url = "https://github.com/avivace/monokai-gtk/archive/refs/heads/master.zip";
-      sha256 = "725046dfb1b50066f68e8de01e25c8289d9264a9ac39bd347c044c6b13c006fc";
+      sha256 = "sha256-lPIjFJSeRo0qgaARcDyhMCUDpgvbjhyQzyj1CVzOob4=";
     })
   ];
 
@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
   installPhase = ''
     runHook preInstall
     mkdir -p $out/share/themes
-    unzip -d $out/share/themes monokai-gtk-master.zip
+    cp -a monokai-gtk* $out/share/themes
     rm $out/share/themes/*/{LICENSE,README.md,.gitignore}
     runHook postInstall
   '';
