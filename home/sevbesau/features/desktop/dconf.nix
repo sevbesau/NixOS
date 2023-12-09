@@ -2,6 +2,12 @@
 with lib.hm.gvariant;
 {
   dconf.settings = {
+    # virt-manager
+    "org/virt-manager/virt-manager/connections" = {
+      autoconnect = ["qemu:///system"];
+      uris = ["qemu:///system"];
+    };
+
     "org/gnome/Console" = {
       font-scale = 2.100000000000001;
       last-window-size = mkTuple [ 652 481 ];
