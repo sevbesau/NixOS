@@ -20,19 +20,22 @@
       esbenp.prettier-vscode
       humao.rest-client
       ms-vsliveshare.vsliveshare
+      mechatroner.rainbow-csv
+      bierner.markdown-emoji
+      bierner.emojisense
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
-      {
-        name = "volar";
-        publisher = "vue";
-        version = "1.8.11";
-        sha256 = "637be102ba685c2187b3f038efbd7a5c191bb462afea4a1ea59b66fee918ee4f";
-      }
-      {
-        name = "vscode-typescript-vue-plugin";
-        publisher = "vue";
-        version = "1.8.11";
-        sha256 = "b9bbd20f3b67d1c60d33287e0a6ee5e3c37ac27d59b7a2d6a67c3cebd89d83ba";
-      }
+      # {
+      #   name = "volar";
+      #   publisher = "vue";
+      #   version = "1.8.11";
+      #   sha256 = "637be102ba685c2187b3f038efbd7a5c191bb462afea4a1ea59b66fee918ee4f";
+      # }
+      # {
+      #   name = "vscode-typescript-vue-plugin";
+      #   publisher = "vue";
+      #   version = "1.8.11";
+      #   sha256 = "b9bbd20f3b67d1c60d33287e0a6ee5e3c37ac27d59b7a2d6a67c3cebd89d83ba";
+      # }
       {
         name = "code-spell-checker";
         publisher = "streetsidesoftware";
@@ -51,6 +54,13 @@
         version = "0.5.2";
         sha256 = "83a2488977e340a404b5d5d982c42c96e2ae2593b432c0f58a3cbe40b604d6e6";
       }
+      # {
+      #   name = "vscode-obsidianmd";
+      #   publisher = "brpaz";
+      #   version = "0.2.0";
+      #   sha256 = "3ff86f3e35cede9af66ecbd95463a651c95c49e811ed36cfc0d16ed8379f6cb5";
+      # }
+
     ];
     userSettings = {
       "terminal.external.linuxExec" = "urxvt";
@@ -73,6 +83,7 @@
       };
       "npm.enableRunFromFolder" = true;
       "debug.javascript.autoAttachFilter" = "always";
+      "obsidianmd.vaultPath" = "~/repos/notes";
     };
   };
 }
