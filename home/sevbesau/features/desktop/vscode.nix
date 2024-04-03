@@ -22,6 +22,8 @@
       ms-vsliveshare.vsliveshare
       graphql.vscode-graphql-syntax
       graphql.vscode-graphql
+      bierner.markdown-emoji
+      bierner.emojisense
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       # {
       #   name = "volar";
@@ -53,6 +55,13 @@
         version = "0.5.2";
         sha256 = "83a2488977e340a404b5d5d982c42c96e2ae2593b432c0f58a3cbe40b604d6e6";
       }
+      # {
+      #   name = "vscode-obsidianmd";
+      #   publisher = "brpaz";
+      #   version = "0.2.0";
+      #   sha256 = "3ff86f3e35cede9af66ecbd95463a651c95c49e811ed36cfc0d16ed8379f6cb5";
+      # }
+
       {
         name = "vscode-stripe";
         publisher = "Stripe";
@@ -93,6 +102,7 @@
       };
       "npm.enableRunFromFolder" = true;
       "debug.javascript.autoAttachFilter" = "always";
+      "obsidianmd.vaultPath" = "~/repos/notes";
       "telemetry.telemetryLevel" = "off";
       "stripe.cliInstallPath" = "/home/sevbesau/.nix-profile/bin/stripe";
 
