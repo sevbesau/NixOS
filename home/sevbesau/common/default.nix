@@ -65,7 +65,7 @@ in
     packages = with pkgs; [
       nodejs_18
       nodePackages.pnpm
-      htop
+      btop
       yarn-berry
       nest-cli
       wl-clipboard
@@ -74,15 +74,15 @@ in
       mpv
       fragments
       heroku
-      stripe-cli
       ngrok
-      cloudflared
       unzip
       prismlauncher
       openjdk16-bootstrap
       cura
       chromium
       kicad
+      freecad
+      sshfs
       # mypackages.monokai-gtk
     ];
   };

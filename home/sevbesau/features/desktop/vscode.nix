@@ -20,19 +20,21 @@
       esbenp.prettier-vscode
       humao.rest-client
       ms-vsliveshare.vsliveshare
+      graphql.vscode-graphql-syntax
+      graphql.vscode-graphql
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
-      {
-        name = "volar";
-        publisher = "vue";
-        version = "1.8.11";
-        sha256 = "637be102ba685c2187b3f038efbd7a5c191bb462afea4a1ea59b66fee918ee4f";
-      }
-      {
-        name = "vscode-typescript-vue-plugin";
-        publisher = "vue";
-        version = "1.8.11";
-        sha256 = "b9bbd20f3b67d1c60d33287e0a6ee5e3c37ac27d59b7a2d6a67c3cebd89d83ba";
-      }
+      # {
+      #   name = "volar";
+      #   publisher = "vue";
+      #   version = "1.8.11";
+      #   sha256 = "637be102ba685c2187b3f038efbd7a5c191bb462afea4a1ea59b66fee918ee4f";
+      # }
+      # {
+      #   name = "vscode-typescript-vue-plugin";
+      #   publisher = "vue";
+      #   version = "1.8.11";
+      #   sha256 = "b9bbd20f3b67d1c60d33287e0a6ee5e3c37ac27d59b7a2d6a67c3cebd89d83ba";
+      # }
       {
         name = "code-spell-checker";
         publisher = "streetsidesoftware";

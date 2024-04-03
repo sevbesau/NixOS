@@ -6,6 +6,8 @@ in
   imports = [
     ../scripts/font-size.nix
   ];
+
+  home.sessionVariables.TERM = "xterm-256color";
   
   programs.urxvt = {
     enable = true;
